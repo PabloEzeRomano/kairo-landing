@@ -1,0 +1,71 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Kairo",
+      "subtitle": "El tiempo oportuno",
+      "cta": "Empezá a planificar tu día"
+    },
+    "features": {
+      "title": "Características",
+      "description": "Descubre todas las herramientas que te ayudarán a maximizar tu productividad y aprovechar cada momento del día.",
+      "taskCreation": "Crear tareas con prioridad y duración",
+      "dailyPlan": "Vista y edición del plan diario",
+      "timeBlocks": "Sugerencias básicas de bloques",
+      "focusMode": "Modo foco con temporizador",
+      "notifications": "Notificaciones básicas",
+      "iaSuggestion": "1 sugerencia diaria de IA",
+      "fullIaPlanning": "Planificación automática completa con IA",
+      "rescheduleAi": "Replanificación dinámica con IA",
+      "weeklyView": "Vista semanal y mensual",
+      "cloudSync": "Sincronización y backup en la nube",
+      "insights": "Estadísticas y hábitos personales",
+      "moreTasks": "Más tareas y proyectos activos",
+      "advancedReminders": "Recordatorios avanzados",
+      "comingSoon": "Y mucho más por venir...",
+      "sync": "Sincronización",
+      "analytics": "Analytics",
+      "security": "Seguridad",
+      "multiplatform": "Multiplataforma"
+    },
+    "aiIllustration": {
+      "title": "IA que entiende tu tiempo",
+      "description": "Nuestra inteligencia artificial analiza tus patrones y te ayuda a crear planes más inteligentes y eficientes para cada día."
+    },
+    "plans": {
+      "title": "Free vs Premium",
+      "description": "Elige el plan que mejor se adapte a tus necesidades de productividad",
+      "free": "Gratis",
+      "premium": "Premium",
+      "freePrice": "$0",
+      "freePeriod": "Para siempre",
+      "premiumPrice": "$9.99",
+      "premiumPeriod": "Por mes",
+      "recommended": "Recomendado",
+      "ctaTitle": "¿Listo para transformar tu productividad?",
+      "ctaDescription": "Únete a miles de usuarios que ya están aprovechando al máximo su tiempo",
+      "startFree": "Empezar gratis",
+      "tryPremium": "Probar Premium"
+    },
+    "footer": {
+      "brandDescription": "Transforma tu productividad con inteligencia artificial. Aprovecha cada momento del día de manera inteligente.",
+      "links": "Enlaces",
+      "home": "Inicio",
+      "features": "Características",
+      "pricing": "Precios",
+      "blog": "Blog",
+      "legal": "Legal",
+      "terms": "Términos",
+      "privacy": "Privacidad",
+      "contact": "Contacto",
+      "language": "Idioma",
+      "copyright": "© 2024 Kairo. Todos los derechos reservados."
+    }
+  },
+  "metadata": {
+    "title": "Kairo - El tiempo oportuno | App de productividad con IA",
+    "description": "Transforma tu productividad con Kairo, la app que usa inteligencia artificial para ayudarte a planificar tu día de manera inteligente y eficiente.",
+    "keywords": "productividad, IA, planificación, tareas, tiempo, app móvil",
+    "ogTitle": "Kairo - El tiempo oportuno",
+    "ogDescription": "App de productividad con IA para maximizar tu tiempo"
+  }
+}
