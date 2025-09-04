@@ -29,6 +29,7 @@ interface ThemeProviderProps {
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const themeValues = useMemo(() => {
     const currentTimeOfDay = getTimeOfDay();
+    console.log('currentTimeOfDay', currentTimeOfDay);
     return {
       timeOfDay: currentTimeOfDay,
       accentGradient: getTimeBasedAccent(currentTimeOfDay),
