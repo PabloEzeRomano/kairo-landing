@@ -48,7 +48,7 @@ export const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
     setError(null);
 
     try {
-      const response = await fetch(`/locales/${lang}.json`);
+      const response = await fetch(`kairo/locales/${lang}.json`);
       if (!response.ok) {
         throw new Error(`Failed to load ${lang} translations`);
       }
