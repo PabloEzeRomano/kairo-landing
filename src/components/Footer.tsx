@@ -22,7 +22,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-16">
+    <footer className="bg-gray-900 text-white py-16 px-16">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
@@ -37,7 +37,7 @@ export default function Footer() {
             <p className="text-gray-300 mb-6 max-w-md">
               {t('landing.footer.brandDescription')}
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <motion.div
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer"
                 whileHover={{ scale: 1.1 }}
@@ -59,7 +59,7 @@ export default function Footer() {
               >
                 <span className="text-xl">⌚</span>
               </motion.div>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Quick Links */}
@@ -109,7 +109,7 @@ export default function Footer() {
           </motion.div>
 
           {/* Legal */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -144,7 +144,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Language Selector and Bottom Bar */}
@@ -195,9 +195,18 @@ export default function Footer() {
               {error && <span className="text-red-400 text-sm">{error}</span>}
             </div>
 
-            <div className="text-gray-400 text-sm">
-              {t('landing.footer.copyright')}
-            </div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center text-gray-400"
+            >
+              <p>
+                © {new Date().getFullYear()} gemm-apps.{' '}
+                {t('landing.footer.copyright')}
+              </p>
+            </motion.div>
           </div>
         </motion.div>
       </div>
