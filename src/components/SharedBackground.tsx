@@ -11,6 +11,7 @@ interface SharedBackgroundProps {
 
 export default function SharedBackground({ children, className = '' }: SharedBackgroundProps) {
   const { timeOfDay, backgroundGradient } = useTheme();
+  console.log('timeOfDay in SharedBackground', {timeOfDay, backgroundGradient});
   const [shapes, setShapes] = useState<Array<{
     id: number;
     size: number;
