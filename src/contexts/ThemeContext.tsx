@@ -30,7 +30,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   const themeValues = useMemo(() => {
     const currentTimeOfDay = getTimeOfDay();
     console.log('currentTimeOfDay', currentTimeOfDay);
-    return {
+    const themeValues = {
       timeOfDay: currentTimeOfDay,
       accentGradient: getTimeBasedAccent(currentTimeOfDay),
       titleColor: getTitleColorBasedOnTimeOfDay(currentTimeOfDay),
@@ -39,6 +39,8 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
       getBoxShadowRGBA: (opacity?: number) =>
         getBoxShadowRGBA(currentTimeOfDay, opacity),
     };
+    console.log('themeValues', themeValues);
+    return themeValues;
   }, []);
 
   return (
