@@ -2,26 +2,26 @@
   "landing": {
     "hero": {
       "title": "Kairo",
-      "subtitle": "The opportune time",
+      "subtitle": "The right time",
       "cta": "Start planning your day"
     },
     "features": {
       "title": "Features",
-      "description": "Discover all the tools that will help you maximize your productivity and make the most of every moment of the day.",
+      "description": "Discover all the tools that will help you plan your day better, focus with intention, and make the most of your time.",
       "taskCreation": "Create tasks with priority and duration",
       "dailyPlan": "Daily plan view and editing",
-      "timeBlocks": "Basic time block suggestions",
+      "timeBlocks": "Suggested time blocks",
       "focusMode": "Focus mode with timer",
       "notifications": "Basic notifications",
       "iaSuggestion": "1 daily AI suggestion",
-      "fullIaPlanning": "Complete automatic AI planning",
-      "rescheduleAi": "Dynamic AI rescheduling",
-      "weeklyView": "Weekly and monthly view",
+      "fullIaPlanning": "Full AI-powered day planning",
+      "rescheduleAi": "Smart rescheduling with AI",
+      "weeklyView": "Weekly and monthly views",
       "cloudSync": "Cloud sync and backup",
-      "insights": "Statistics and personal habits",
-      "moreTasks": "More tasks and active projects",
+      "insights": "Stats and personal productivity trends",
+      "moreTasks": "More tasks and projects",
       "advancedReminders": "Advanced reminders",
-      "comingSoon": "And much more to come...",
+      "comingSoon": "And much more coming soon...",
       "sync": "Sync",
       "analytics": "Analytics",
       "security": "Security",
@@ -29,11 +29,11 @@
     },
     "aiIllustration": {
       "title": "AI that understands your time",
-      "description": "Our artificial intelligence analyzes your patterns and helps you create smarter and more efficient plans for each day."
+      "description": "Our AI analyzes your patterns and helps you create smarter, more balanced daily plans, tailored just for you."
     },
     "plans": {
       "title": "Free vs Premium",
-      "description": "Choose the plan that best fits your productivity needs",
+      "description": "Choose the plan that fits your productivity style best.",
       "free": "Free",
       "premium": "Premium",
       "freePrice": "$0",
@@ -42,12 +42,12 @@
       "premiumPeriod": "Per month",
       "recommended": "Recommended",
       "ctaTitle": "Ready to transform your productivity?",
-      "ctaDescription": "Join thousands of users who are already making the most of their time",
+      "ctaDescription": "Join thousands of users already making the most of their time.",
       "startFree": "Start free",
       "tryPremium": "Try Premium"
     },
     "footer": {
-      "brandDescription": "Transform your productivity with artificial intelligence. Make the most of every moment of the day intelligently.",
+      "brandDescription": "Boost your productivity with the help of AI. Make the most of every moment, with intention and ease.",
       "links": "Links",
       "home": "Home",
       "features": "Features",
@@ -58,14 +58,7 @@
       "privacy": "Privacy",
       "contact": "Contact",
       "language": "Language",
-      "copyright": "© 2024 Kairo. All rights reserved."
+      "copyright": "All rights reserved."
     }
-  },
-  "metadata": {
-    "title": "Kairo - The opportune time | AI productivity app",
-    "description": "Transform your productivity with Kairo, the app that uses artificial intelligence to help you plan your day intelligently and efficiently.",
-    "keywords": "productivity, AI, planning, tasks, time, mobile app",
-    "ogTitle": "Kairo - The opportune time",
-    "ogDescription": "AI productivity app to maximize your time"
   }
 }
