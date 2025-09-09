@@ -29,6 +29,8 @@ export default function SharedBackground({ children, className = '' }: SharedBac
     // Generate random background shapes only on client side
     const shapeCount = Math.floor(Math.random() * 8) + 6; // 6-13 shapes
     const currentTimeOfDay = timeOfDay;
+    
+    console.log('Generating shapes for timeOfDay:', currentTimeOfDay);
 
     // Different colors based on time of day
     const colors = currentTimeOfDay === 'night'
@@ -53,6 +55,8 @@ export default function SharedBackground({ children, className = '' }: SharedBac
           'bg-rose-200',
         ];
 
+    console.log('Using colors for', currentTimeOfDay, ':', colors);
+
     const randomShapes = [...Array(shapeCount)].map((_, i) => ({
       id: i,
       size: Math.random() * 200 + 100, // 100-300px
@@ -66,6 +70,7 @@ export default function SharedBackground({ children, className = '' }: SharedBac
       opacity: currentTimeOfDay === 'night' ? 'opacity-80' : 'opacity-70',
     }));
 
+    console.log('Generated shapes:', randomShapes.map(s => ({ color: s.color, opacity: s.opacity })));
     setShapes(randomShapes);
   }, [timeOfDay]);
 

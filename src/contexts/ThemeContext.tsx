@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useMemo, ReactNode } from 'react';
+import { createContext, useContext, ReactNode } from 'react';
 import {
   getTimeOfDay,
   getTimeBasedAccent,
@@ -27,21 +27,20 @@ interface ThemeProviderProps {
 }
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  const themeValues = useMemo(() => {
-    const currentTimeOfDay = getTimeOfDay();
-    console.log('currentTimeOfDay', currentTimeOfDay);
-    const themeValues = {
-      timeOfDay: currentTimeOfDay,
-      accentGradient: getTimeBasedAccent(currentTimeOfDay),
-      titleColor: getTitleColorBasedOnTimeOfDay(currentTimeOfDay),
-      backgroundGradient: getTimeBasedBackground(currentTimeOfDay),
-      descriptionColor: getDescriptionColorBasedOnTimeOfDay(currentTimeOfDay),
-      getBoxShadowRGBA: (opacity?: number) =>
-        getBoxShadowRGBA(currentTimeOfDay, opacity),
-    };
-    console.log('themeValues', themeValues);
-    return themeValues;
-  }, []);
+  // Calculate theme values fresh each time to ensure they're current
+  const currentTimeOfDay = getTimeOfDay();
+  console.log('currentTimeOfDay', currentTimeOfDay);
+  
+  const themeValues = {
+    timeOfDay: currentTimeOfDay,
+    accentGradient: getTimeBasedAccent(currentTimeOfDay),
+    titleColor: getTitleColorBasedOnTimeOfDay(currentTimeOfDay),
+    backgroundGradient: getTimeBasedBackground(currentTimeOfDay),
+    descriptionColor: getDescriptionColorBasedOnTimeOfDay(currentTimeOfDay),
+    getBoxShadowRGBA: (opacity?: number) =>
+      getBoxShadowRGBA(currentTimeOfDay, opacity),
+  };
+  console.log('themeValues', themeValues);
 
   return (
     <ThemeContext.Provider value={themeValues}>
