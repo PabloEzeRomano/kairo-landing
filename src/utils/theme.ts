@@ -2,7 +2,6 @@ import { TimeOfDay } from '@/types';
 
 export const getTimeOfDay = (): TimeOfDay => {
   const hour = new Date().getHours();
-  console.log('hour', hour);
 
   if (hour >= 5 && hour < 12) return 'morning';
   if (hour >= 12 && hour < 17) return 'afternoon';

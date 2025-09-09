@@ -29,8 +29,7 @@ interface ThemeProviderProps {
 export function ThemeProvider({ children }: ThemeProviderProps) {
   // Calculate theme values fresh each time to ensure they're current
   const currentTimeOfDay = getTimeOfDay();
-  console.log('currentTimeOfDay', currentTimeOfDay);
-  
+
   const themeValues = {
     timeOfDay: currentTimeOfDay,
     accentGradient: getTimeBasedAccent(currentTimeOfDay),
@@ -40,7 +39,6 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     getBoxShadowRGBA: (opacity?: number) =>
       getBoxShadowRGBA(currentTimeOfDay, opacity),
   };
-  console.log('themeValues', themeValues);
 
   return (
     <ThemeContext.Provider value={themeValues}>
