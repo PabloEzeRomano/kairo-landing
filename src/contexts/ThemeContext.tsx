@@ -2,12 +2,7 @@
 
 import { createContext, useContext, ReactNode } from 'react';
 import {
-  getTimeOfDay,
-  getTimeBasedAccent,
-  getTitleColorBasedOnTimeOfDay,
-  getTimeBasedBackground,
-  getDescriptionColorBasedOnTimeOfDay,
-  getBoxShadowRGBA,
+  getThemeConfig,
 } from '@/utils/theme';
 import { TimeOfDay } from '@/types';
 
@@ -28,17 +23,7 @@ interface ThemeProviderProps {
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
   // Calculate theme values fresh each time to ensure they're current
-  const currentTimeOfDay = getTimeOfDay();
-
-  const themeValues = {
-    timeOfDay: currentTimeOfDay,
-    accentGradient: getTimeBasedAccent(currentTimeOfDay),
-    titleColor: getTitleColorBasedOnTimeOfDay(currentTimeOfDay),
-    backgroundGradient: getTimeBasedBackground(currentTimeOfDay),
-    descriptionColor: getDescriptionColorBasedOnTimeOfDay(currentTimeOfDay),
-    getBoxShadowRGBA: (opacity?: number) =>
-      getBoxShadowRGBA(currentTimeOfDay, opacity),
-  };
+  const themeValues = getThemeConfig();
 
   return (
     <ThemeContext.Provider value={themeValues}>

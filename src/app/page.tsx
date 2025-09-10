@@ -13,8 +13,8 @@ export default function Home() {
         <AIIllustration />
         <Features />
         <PricingPlans />
-      </SharedBackground>
       <Footer />
+      </SharedBackground>
     </main>
   );
 }

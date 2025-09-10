@@ -27,10 +27,10 @@ export default function SharedBackground({ children, className = '' }: SharedBac
   useEffect(() => {
     // Generate random background shapes only on client side
     const shapeCount = Math.floor(Math.random() * 8) + 6; // 6-13 shapes
-    const currentTimeOfDay = timeOfDay;
+    // const currentTimeOfDay = timeOfDay;
 
     // Different colors based on time of day
-    const colors = currentTimeOfDay === 'night'
+    const colors = timeOfDay === 'night'
       ? [
           'bg-blue-300',
           'bg-purple-300',
@@ -62,7 +62,7 @@ export default function SharedBackground({ children, className = '' }: SharedBac
       delay: Math.random() * 5, // 0-5 seconds
       scale: [1, Math.random() * 0.5 + 1.1, 1], // 1 to 1.1-1.6
       rotate: [0, Math.random() * 360, 0], // 0 to random degrees
-      opacity: currentTimeOfDay === 'night' ? 'opacity-80' : 'opacity-70',
+      opacity: timeOfDay === 'night' ? 'opacity-80' : 'opacity-70',
     }));
 
     setShapes(randomShapes);
