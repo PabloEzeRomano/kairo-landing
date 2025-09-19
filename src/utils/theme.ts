@@ -11,7 +11,6 @@ export type ThemeConfig = {
 
 export const getThemeConfig = (): ThemeConfig => {
   const hour = new Date().getHours();
-  console.log(hour);
 
   if (hour >= 5 && hour < 12) return timeBasedTheme.morning;
   if (hour >= 12 && hour < 17) return timeBasedTheme.afternoon;
